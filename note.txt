@@ -1,0 +1,14 @@
+rumah-sakit-api
+├── cmd
+│   └── main.go
+├── internal
+│   └── patient
+│       ├── patient.go
+│       └── patient_service.go
+├── pkg
+├── api
+│   └── patient_handler.go
+└── repository
+    └── patient_repository.go
+
+repository : digunakan untuk menyimpan implementasi penyimpanan atau akses data.
