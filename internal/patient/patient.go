@@ -1,7 +1,5 @@
 package patient
 
-import "learn-crud-hospitals/repository"
-
 type Patient struct {
 	ID      int    `json:"id"`
 	Name    string `json:"name"`
@@ -19,7 +17,7 @@ type PatientService struct {
 	repo PatientRepository
 }
 
-func NewPatientService(repo *repository.PatientRepository) *PatientService {
+func NewPatientService(repo PatientRepository) *PatientService {
 	return &PatientService{repo: repo}
 }
 
